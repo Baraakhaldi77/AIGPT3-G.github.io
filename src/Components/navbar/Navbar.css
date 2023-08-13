@@ -1,0 +1,73 @@
+.gpt3__navbar {  /* For Styling Logo*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 6rem;
+}
+
+.gpt3__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gpt3__navbar-links_logo{
+  margin-right: 2rem;
+}
+
+.gpt3__navbar-links_logo img{
+  width: 62px;
+  height: 16px;
+}
+
+.gpt3__navbar-links-container {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  overflow-x: auto; /* Add horizontal scrollbar if content overflows */
+}
+
+.gpt3__navbar-links-container p {
+  margin: 0;
+  padding: 0 15px;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.gpt3__navbar-links-container p a {
+  font-weight: 300;
+}
+
+.gpt3__navbar-links-container a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Sign-div {
+  display: flex;
+  justify-content: end;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.SignIn {
+  color: white;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+.SignUp {
+ color: white;
+ background: linear-gradient(to right,  #13a306, #98a300);
+ padding: 12px 24px;
+ border: none;
+ font-weight: 500;
+ border-radius: 4px;
+ cursor: pointer;
+}
+

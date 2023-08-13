@@ -1,0 +1,177 @@
+.Header-Padding {
+  display: flex;
+  background: linear-gradient(to right, #80ff8b, #ffc504);
+  color: transparent; /* Make the text transparent */
+  -webkit-background-clip: text; /* For Safari/WebKit browsers */
+  background-clip: text;
+  border: none;
+  padding: 10px 20px;
+}
+
+.Header-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin-left: 5rem;
+}
+
+.Header-content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  
+  width: 614px;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+
+.Header-content p {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--color-text);
+  padding-top: 1.5rem;
+  height: 227px;
+  width: 580px
+}
+
+.IInput {
+  margin-top: -70px;
+}
+
+.input {
+  width: 630px;
+  height: 73px;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  
+  font-size: 20px;
+  padding: 0 1rem;
+  background: var(--color-footer);
+  outline: none;
+  color: white;
+  border: 2px solid var(--color-footer);
+}
+
+.IInput button {
+  width: 174px;
+  height: 73px;
+  top: 624px;
+  left: 768px;
+  border-radius: 5px 0px 0px 5px;
+
+  background: linear-gradient(to right,  #159e09, #b4c00c);
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.Header-People {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+}
+
+.Header-image {
+  max-width: 100%; /* Ensure the image doesn't exceed its original width */
+  margin-right: 10px; /* Add some spacing between the image and the text */
+
+  padding-bottom: 155px;
+}
+
+.Header-People p {
+  margin: 0; /* Reset default margin for the paragraph */
+}
+
+.Header-Image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header-Image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .Header-Padding {
+    flex-direction: column;
+  }
+  .Header-content {
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Header-Padding h1{
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .Header-Padding p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .IInput {
+    flex-direction: column;
+  }
+
+  .Header-p {
+    margin: 0;
+  }
+
+  .IInput, .input, .Header-Button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .Header-Padding h1{
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .Header-Padding p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .IInput, .input, .Header-Button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1050px) {
+ .Header-content h1 {
+  width: 700px;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 62px;
+
+  margin-left: 5rem;
+ }
+
+ .Header-input p {
+  margin-left: 5rem;
+ }
+
+ .IInput {
+  margin-left: 4rem;
+ }
+
+ .Header-People {
+  margin-left: 5rem;
+ }
+}
+
